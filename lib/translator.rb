@@ -25,7 +25,7 @@ def get_japanese_emoticon(emoticon_lab, emoticon)
       if a.nil?
         return "Sorry, that emoticon was not found"
       else
-        a[1]
+        return a[1]
       end
     end
   end
