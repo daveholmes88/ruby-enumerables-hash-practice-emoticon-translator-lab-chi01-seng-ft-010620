@@ -23,7 +23,7 @@ def get_japanese_emoticon(emoticon_lab, emoticon)
         if emoticon == attribute[0]
           return attribute[1]
         else
-          "Sorry, emoticon was not found"
+          "Sorry, that emoticon was not found"
         end
       end
     end
