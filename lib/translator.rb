@@ -19,13 +19,13 @@ def get_japanese_emoticon(emoticon_lab, emoticon)
   hash = load_library(emoticon_lab)
   hash.each do |key, value|
     if key == :get_emoticon
-      value.each do |attribute|
-        if emoticon == attribute[0]
-          return attribute[1]
-        else
-          "Sorry, that emoticon was not found"
-        end
+      a = value.find do |attribute|
+        emoticon == attribute[0]          
       end
+      if a.nil? 
+        return "Sorry, that emoticon was not found"
+      else
+        a[1]
     end
   end
 end
