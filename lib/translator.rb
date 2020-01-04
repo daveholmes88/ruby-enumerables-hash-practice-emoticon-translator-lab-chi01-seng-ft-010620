@@ -20,9 +20,9 @@ def get_japanese_emoticon(emoticon_lab, emoticon)
   hash.each do |key, value|
     if key == :get_emoticon
       a = value.find do |attribute|
-        emoticon == attribute[0]          
+        emoticon == attribute[0]
       end
-      if a.nil? 
+      if a.nil?
         return "Sorry, that emoticon was not found"
       else
         a[1]
