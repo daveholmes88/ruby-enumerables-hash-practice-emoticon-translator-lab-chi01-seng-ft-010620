@@ -43,7 +43,7 @@ def get_english_meaning(emoticon_lab, emoticon)
         #   "Sorry, that emoticon was not found"
         # end
       end
-      return attribute[1]
+      return a[1]
     end
   end
 end
