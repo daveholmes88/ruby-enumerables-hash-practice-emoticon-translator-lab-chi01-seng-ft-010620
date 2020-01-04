@@ -43,7 +43,7 @@ def get_english_meaning(emoticon_lab, emoticon)
         #   "Sorry, that emoticon was not found"
         # end
       end
-      binding.pry
+      return attribute[1]
     end
   end
 end
