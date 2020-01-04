@@ -35,9 +35,9 @@ def get_english_meaning(emoticon_lab, emoticon)
   hash.each do |key, value|
     if key == :get_meaning
       value.each do |attribute|
-        if emoticon = attribute[0]
+        if emoticon == attribute[0]
           return attribute[1]
-          if emoticon = nil
+          if emoticon == nil
             "Sorry, that emoticon was not found"
           end 
         end
