@@ -27,7 +27,6 @@ def get_japanese_emoticon(emoticon_lab, emoticon)
       else
         a[1]
       end
-    end
   end
 end
 
