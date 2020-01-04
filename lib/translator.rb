@@ -26,7 +26,9 @@ def get_japanese_emoticon(emoticon_lab, emoticon)
       end
     end
   end
-  return "Sorry, that emoticon was not found"
+  if nil
+    return "Sorry, that emoticon was not found"
+  end 
 end
 
 def get_english_meaning(emoticon_lab, emoticon)
