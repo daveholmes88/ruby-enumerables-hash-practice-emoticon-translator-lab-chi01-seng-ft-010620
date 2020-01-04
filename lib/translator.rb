@@ -19,7 +19,6 @@ def get_japanese_emoticon(emoticon_lab, emoticon)
   hash = load_library(emoticon_lab)
   hash.each do |key, value|
     value.each do |attribute|
-      binding.pry
       if emoticon == attribute[0]
         return attribute[1]
       else
