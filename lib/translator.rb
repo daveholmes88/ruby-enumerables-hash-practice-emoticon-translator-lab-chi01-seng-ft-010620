@@ -34,14 +34,16 @@ def get_english_meaning(emoticon_lab, emoticon)
   hash = load_library(emoticon_lab)
   hash.each do |key, value|
     if key == :get_meaning
-      value.each do |attribute|
-        binding.pry
-        if emoticon == attribute[0]
-          return attribute[1]
-        else
-          "Sorry, that emoticon was not found"
-        end
+      a = value.find do |attribute|
+        emoticon == attribute[0]
+
+        # if emoticon == attribute[0]
+        #   return attribute[1]
+        # else
+        #   "Sorry, that emoticon was not found"
+        # end
       end
+      binding.pry
     end
   end
 end
