@@ -20,8 +20,8 @@ def get_japanese_emoticon(emoticon_lab, emoticon)
   hash.each do |key, value|
     value.each do |attribute|
       binding.pry 
-      if emoticon == attribute
-        return attribute
+      if emoticon == attribute[0]
+        return attribute[1]
       else
         "Sorry, that emoticon was not found"
       end
