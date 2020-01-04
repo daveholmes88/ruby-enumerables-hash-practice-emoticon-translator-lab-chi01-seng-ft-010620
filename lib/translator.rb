@@ -27,7 +27,7 @@ def get_japanese_emoticon(emoticon_lab, emoticon)
         end
       end
     end
-  end      
+  end
 end
 
 def get_english_meaning(emoticon_lab, emoticon)
