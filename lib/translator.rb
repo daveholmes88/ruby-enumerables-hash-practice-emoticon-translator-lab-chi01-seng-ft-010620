@@ -21,9 +21,9 @@ def get_japanese_emoticon(emoticon_lab, emoticon)
     if key == :get_emoticon
       value.each do |attribute|
         if emoticon == attribute[0]
-          return attribute[1]
+          attribute[1]
         else
-          return "Sorry, that emoticon was not found"
+          "Sorry, that emoticon was not found"
         end
       end
     end
