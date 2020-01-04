@@ -22,9 +22,9 @@ def get_japanese_emoticon(emoticon_lab, emoticon)
       value.each do |attribute|
         if emoticon == attribute[0]
           return attribute[1]
-          if emoticon == nil
+          if emoticon != attribute[0]
             "Sorry, that emoticons was not found"
-          end 
+          end
         end
       end
     end
