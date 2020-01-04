@@ -39,7 +39,7 @@ def get_english_meaning(emoticon_lab, emoticon)
           return attribute[1]
           if emoticon == nil
             "Sorry, that emoticon was not found"
-          end 
+          end
         end
       end
     end
