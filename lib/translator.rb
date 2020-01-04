@@ -37,8 +37,9 @@ def get_english_meaning(emoticon_lab, emoticon)
       value.each do |attribute|
         if emoticon = attribute[0]
           return attribute[1]
-        else
-          "Sorry, that emoticon was not found"
+          if emoticon = nil
+            "Sorry, that emoticon was not found"
+          end 
         end
       end
     end
