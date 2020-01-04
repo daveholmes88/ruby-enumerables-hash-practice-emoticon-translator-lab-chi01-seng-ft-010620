@@ -30,4 +30,7 @@ end
 
 def get_english_meaning(emoticon_lab, emoticon)
   hash = load_library(emoticon_lab)
+  hash.each do |key, value|
+    binding.pry 
+  end
 end
