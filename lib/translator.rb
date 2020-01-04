@@ -18,7 +18,7 @@ end
 def get_japanese_emoticon(emoticon_lab, emoticon)
   hash = load_library(emoticon_lab)
   hash.each do |key, value|
-    if key == :get_meaning
+    if key == :get_emoticon
       value.each do |attribute|
           binding.pry 
         if emoticon == attribute[0]
@@ -34,7 +34,7 @@ end
 def get_english_meaning(emoticon_lab, emoticon)
   hash = load_library(emoticon_lab)
   hash.each do |key, value|
-    if key == :get_emoticon
+    if key == :get_meaning
       value.each do |attribute|
         if emoticon = attribute[0]
           return attribute[1]
